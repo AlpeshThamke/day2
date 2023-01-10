@@ -3,7 +3,7 @@ import sys;
 def encrypt(data=None):
   if data is not None:
     print(">>> Data acknowledged and sent");
-    return data.encode('utf-8');
+    return data.encode('utf-8');                  #assuming the data is of the type str;
   else:
     return None;
 
