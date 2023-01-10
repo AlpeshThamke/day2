@@ -3,7 +3,7 @@ import sys;
 def decrypt(data=None):
   if data is not None:
     print("Data Acknowledged");
-    return data.decode('utf-8');
+    return data.decode('utf-8');                    #assuming the data is of bytes type
   else:
     return None;
 
