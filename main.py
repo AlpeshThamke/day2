@@ -5,13 +5,13 @@ from encryption import *;
 from decryption import *;
 
 def start_conversation():
-  trials_left=3;
+  trials_left=3;                                                    #3 trials for user
   while trials_left:
     trials_left-=1;
     state = 0;
     print("Public Key please (in this case key is 'private_key')");
     public_key = input();
-    if auth(public_key):
+    if auth(public_key):                                            #auth method is from auth_code module
       print("Conversation Started");
       turn = 1;
       while True:
